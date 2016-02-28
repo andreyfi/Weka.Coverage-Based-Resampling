@@ -1,4 +1,4 @@
-# Coverage Based Resampling implementation for Weka
+# Coverage Based Resampling for Weka
 
 
 ###1. Algorithm Name
@@ -18,6 +18,6 @@ In oversampling the idea is to create more instances of the minority class in or
 The Coverage-Based Resampling algorithm uses under sampling together with ensemble techniques in order to train classifiers on balanced training set with a minimal loss of information.  
  
 ###5. Short Description:
-The Coverage-Based Resampling algorithm creates balanced datasets by resampling the training set. Each dataset is created from all the minority class instances and randomly selected instances from other classes (without replacement in the dataset). 
+The Coverage-Based Resampling algorithm creates balanced datasets by resampling the training set. the algorithm is implemented as a Meta Classifier that bootstrap samples of the data in a way that each dataset is created from all the minority class instances and randomly selected instances from other classes (without replacement in the dataset). 
 The number of datasets that are created depends on the imbalance rate in the original training set and on the number of instances from the majority class that we want to use (coverage rate). The algorithm creates the dataset independently and therefore the coverage is defined by the probability of an instance from the majority class to be selected at least to one dataset. After creating the datasets the algorithm uses a base classifier to train a model for each dataset. The classification is made by summing the probabilities outputted from the models for each class and selecting the class with the highest probability summation.
 
