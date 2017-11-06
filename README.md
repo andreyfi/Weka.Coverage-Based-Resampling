@@ -9,7 +9,7 @@ Ibarguren, I., Pérez, M., Muguerza, J., Gurrutxaga, I., Arbelaitz, O.
 Coverage based resampling: building robust consolidated decision trees. Knowl.-Based Syst. (2015)
 
 ###3. Implemented By
-Itay Hazan and Andrey Finkelstein
+Andrey Finkelstein and Itay Hazan 
 ISE Dept. Ben-Gurion University of the Negev, Israel
 
 ###4. Motivation for the algorithm
